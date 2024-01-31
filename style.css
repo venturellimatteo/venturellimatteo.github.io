@@ -1,0 +1,27 @@
+body {
+    font-family: proxima-nova;
+}
+
+h1 {
+    font-size: 27px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.primary-nav {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.secondary-nav {
+    font-size: 13px;
+}
