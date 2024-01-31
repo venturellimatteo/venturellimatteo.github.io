@@ -80,7 +80,7 @@ li.menu-item:not(:last-child) {
 }
 
 .thumbnail {
-    width: 30%;
+    width: 33%;
     position: relative;
     display: inline-block;
     cursor: pointer;
