@@ -11,6 +11,7 @@
     <link rel="manifest" href="src/assets/favicon_io/site.webmanifest">
     <link rel="stylesheet" href="src/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/cou8wjo.css">
+    
 </head>
 
 <body>
@@ -36,30 +37,22 @@
             </div>
         </div>
         <div class="page">
-            <div class="thumbnail-wrapper">
-                <div class="thumbnail" data-type="image"><img src="/src/assets/images/Film-2.jpg" alt=""></div>
-                <div class="thumbnail" data-type="image"><img src="/src/assets/images/Film-5.jpg" alt=""></div>
-                <div class="thumbnail" data-type="image"><img src="/src/assets/images/Film-13.jpg" alt=""></div>
-                <div class="thumbnail" data-type="image"><img src="/src/assets/images/Film-14.jpg" alt=""></div>
-
-                <div class="thumbnail" data-type="image"><img src="/src/assets/images/Film-3.jpg" alt=""></div>
-                <div class="thumbnail" data-type="image"><img src="/src/assets/images/Film-6.jpg" alt=""></div>
-                <div class="thumbnail" data-type="image"><img src="/src/assets/images/Film-8.jpg" alt=""></div>
-                <div class="thumbnail" data-type="image"><img src="/src/assets/images/Film-10.jpg" alt=""></div>
-                <div class="thumbnail" data-type="image"><img src="/src/assets/images/Film-12.jpg" alt=""></div>
-                <div class="thumbnail" data-type="image"><img src="/src/assets/images/Film-17.jpg" alt=""></div>
-
-                <div class="thumbnail" data-type="image"><img src="/src/assets/images/Film-4.jpg" alt=""></div>
-                <div class="thumbnail" data-type="image"><img src="/src/assets/images/Film-7.jpg" alt=""></div>
-                <div class="thumbnail" data-type="image"><img src="/src/assets/images/Film-9.jpg" alt=""></div>
-                <div class="thumbnail" data-type="image"><img src="/src/assets/images/Film-11.jpg" alt=""></div>
-                <div class="thumbnail" data-type="image"><img src="/src/assets/images/Film-15.jpg" alt=""></div>
-                <div class="thumbnail" data-type="image"><img src="/src/assets/images/Film-16.jpg" alt=""></div>
-                
+            <div class="grid">
+                <!-- <div class="thumbnail" data-type="image"><img src="/src/assets/images/Film-2.jpg" alt=""></div> --> 
+                <!-- Here I automatically insert divs with JS -->                          
             </div>
-            <div>
-
-            </div>
+            <script src="src/addimages.js"></script>
+            <script src="src/masonry.pkgd.js"></script>
+            <script src="src/imagesloaded.pkgd.js"></script>
+            <script src="src/AnimOnScroll.js"></script>
+            <script>
+                new AnimOnScroll( document.getElementById( 'grid' ), {
+                    minDuration : 0.4,
+                    maxDuration : 0.7,
+                    viewportFactor : 0.2
+                } );
+            </script>
+            <script src="src/addmasonry.js"></script>
         </div>
     </div>
 </body>
