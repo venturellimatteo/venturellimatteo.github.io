@@ -4,11 +4,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Digital Portfolio</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon_io/site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/cou8wjo.css">
+    
 </head>
 
 <body>
-
+    <div class="wrapper">
+        <div class="nav">
+            <div>
+                <a href="/" class="logo-text">Matteo Venturelli</a>
+            </div>
+            <div>
+                <div class="subnav">
+                    <ul class="primary-nav">
+                        <li class="menu-item inactive"><a href="/">Analog photography</a></li>
+                        <li class="menu-item"><a href="digital.html">Digital photography</a></li>
+                    </ul>
+                </div>
+                <div class="subnav">
+                    <ul class="secondary-nav">
+                        <li class="menu-item inactive"><a href="aboutme.html">About me</a></li>
+                        <li class="menu-item inactive"><a href="https://github.com/venturellimatteo">GitHub</a></li>
+                        <li class="menu-item inactive"><a href="https://instagram.com/ventu_00">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="page">
+            <ul class="grid effect-1" id="grid">
+                <!-- Here I automatically insert lis with JS -->                          
+            </ul>
+            <script src="adddigitalimages.js"></script>
+            <script src="masonry.pkgd.js"></script>
+            <script src="imagesloaded.pkgd.js"></script>
+            <script src="classie.js"></script>
+            <script src="AnimOnScroll.js"></script>
+            <script>
+                new AnimOnScroll( document.getElementById( 'grid' ), {
+                    minDuration : 0.4,
+                    maxDuration : 0.7,
+                    viewportFactor : 0.2
+                } );
+            </script>
+        </div>
+    </div>
 </body>
 
 </html>
