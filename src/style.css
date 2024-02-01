@@ -22,20 +22,109 @@ div {
     vertical-align: top;
 }
 
+.grid li {
+    float: left;
+}
+
+.grid li.shown,
+.no-js .grid li,
+.no-cssanimations .grid li {
+    opacity: 1;
+}
+
+.grid li img {
+    display: block;
+    max-width: 100%;
+}
+
+/* Effect 1: opacity */
+.grid.effect-1 li.animate {
+    -webkit-animation: fadeIn 0.65s ease forwards;
+    animation: fadeIn 0.65s ease forwards;
+}
+
+@-webkit-keyframes fadeIn {
+    0% { }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeIn {
+    0% { }
+    100% { opacity: 1; }
+}
+
 @media screen and (max-width: 599px) {
 
+    .wrapper {
+        margin: 25px;
+        width: calc(100% - 50px);
+    }
+
+    .nav {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .logo-text {
+        font-size: 25px;
+        font-weight: 700;
+    }
+
+    .menu-button {
+        display: inline-block;
+        cursor: pointer;
+        position: absolute;
+        right: 25px;
+    }
+    
+    .bar1, .bar2, .bar3 {
+        width: 25px;
+        height: 3px;
+        background-color: black;
+        transition: 0.4s;
+        display: block;
+    }
+
+    .bar2, .bar3 {
+        margin: 6px 0;
+    }
+    
+    .change .bar1 {
+        transform: translate(0, 9px) rotate(-45deg);
+    }
+    
+    .change .bar2 {
+        opacity: 0;
+    }
+    
+    .change .bar3 {
+        transform: translate(0, -9px) rotate(45deg);
+    }
+
+    .page {
+        width: 100%;
+    }
+
+    .grid li {
+        width: 100%;
+        margin-bottom: 15px;
+    }
 }
 
 
 @media screen and (min-width: 600px) {
 
-    li.menu-item:not(:last-child) { 
-        margin-bottom: 7px;  
-    }
-    
     .wrapper {
         margin: 50px;
         width: calc(100% - 100px);
+    }
+
+    li.menu-item:not(:last-child) { 
+        margin-bottom: 7px;  
     }
     
     .nav {
@@ -46,7 +135,10 @@ div {
     .logo-text {
         font-size: 27px;
         font-weight: 700;
-        transform: scale(1.5, 1);
+    }
+
+    .menu-button {
+        display: none;
     }
     
     .subnav {
@@ -74,45 +166,17 @@ div {
         margin-left: 200px;
         width: calc(100% - 200px);
     }
-   
+
     .grid li {
         width: calc(100% - 10px);
-        float: left;
         margin-left: 10px;
         margin-bottom: 10px;
-    }
-
-    .grid li.shown,
-    .no-js .grid li,
-    .no-cssanimations .grid li {
-        opacity: 1;
-    }
-    
-    .grid li img {
-        display: block;
-        max-width: 100%;
     }
     
     .grid li img:hover {
         opacity: .9;
     }
 
-    /* Effect 1: opacity */
-    .grid.effect-1 li.animate {
-        -webkit-animation: fadeIn 0.65s ease forwards;
-        animation: fadeIn 0.65s ease forwards;
-    }
-
-    @-webkit-keyframes fadeIn {
-        0% { }
-        100% { opacity: 1; }
-    }
-
-    @keyframes fadeIn {
-        0% { }
-        100% { opacity: 1; }
-    }
-    
 }
 
 @media screen and (min-width: 1000px) {

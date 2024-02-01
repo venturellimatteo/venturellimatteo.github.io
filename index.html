@@ -11,16 +11,22 @@
     <link rel="manifest" href="src/assets/favicon_io/site.webmanifest">
     <link rel="stylesheet" href="src/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/cou8wjo.css">
+    <script src="src/scripts.js"></script>
     
 </head>
 
 <body>
     <div class="wrapper">
         <div class="nav">
-            <div>
-                <a href="/" class="logo-text">Matteo Venturelli</a>
+            <div class="logo-div">
+                <div><a href="/" class="logo-text">Matteo Venturelli</a></div>
+                <div class="menu-button" onclick="menuToggle(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
             </div>
-            <div>
+            <div class="nav-menu">
                 <div class="subnav">
                     <ul class="primary-nav">
                         <li class="menu-item"><a href="/">Analog photography</a></li>
