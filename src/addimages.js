@@ -7,14 +7,14 @@ for (let i = 2; i <= 26; i++) {
 const grid = document.querySelector('.grid');
 
 images.forEach(imageSrc => {
-    const thumbnailDiv = document.createElement('div');
-    thumbnailDiv.className = 'thumbnail';
-    thumbnailDiv.setAttribute('data-type', 'image');
+    const thumbnailLi = document.createElement('li');
+    thumbnailLi.className = 'thumbnail';
+    thumbnailLi.setAttribute('data-type', 'image');
 
     const img = document.createElement('img');
     img.src = imageSrc;
     img.alt = '';
 
-    thumbnailDiv.appendChild(img);
-    grid.appendChild(thumbnailDiv);
+    thumbnailLi.appendChild(img);
+    grid.appendChild(thumbnailLi);
 });

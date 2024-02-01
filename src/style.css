@@ -75,54 +75,69 @@ div {
         width: calc(100% - 200px);
     }
 
+    /*
     .grid:after {
         content: '';
         display: block;
         clear: both;
     }
-    
-    .thumbnail {
+    */
+   
+    .grid li {
         width: calc(100% - 10px);
         float: left;
         margin-left: 10px;
         margin-bottom: 10px;
         cursor: pointer;
     }
-    
-    .thumbnail img {
-        display: block;
-        max-width: 100%;
-        transition: opacity .2s;
+
+    .grid li.shown,
+    .no-js .grid li,
+    .no-cssanimations .grid li {
         opacity: 1;
     }
     
-    .thumbnail img.loading {
-        opacity: 0;
+    .grid li img {
+        display: block;
+        max-width: 100%;
     }
     
-    .thumbnail img:hover {
+    .grid li img:hover {
         opacity: .9;
     }
-    
-    .thumbnail.content-fit img, .thumbnail .content-fit img {
-        width: auto;
+
+    /* Effect 1: opacity */
+    .grid.effect-1 li.animate {
+        -webkit-animation: fadeIn 0.65s ease forwards;
+        animation: fadeIn 0.65s ease forwards;
     }
+
+    @-webkit-keyframes fadeIn {
+        0% { }
+        100% { opacity: 1; }
+    }
+
+    @keyframes fadeIn {
+        0% { }
+        100% { opacity: 1; }
+    }
+    
 }
 
 @media screen and (min-width: 1000px) {
-    .thumbnail {
+    .grid li {
         width: calc(100% / 2 - 10px);
     }
 }
 
 @media screen and (min-width: 1400px) {
-    .thumbnail {
+    .grid li {
         width: calc(100% / 3 - 10px);
     }
 }
 
 @media screen and (min-width: 1800px) {
-    .thumbnail {
+    .grid li {
         width: calc(100% / 4 - 10px);
     }
 }

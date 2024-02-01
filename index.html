@@ -37,13 +37,13 @@
             </div>
         </div>
         <div class="page">
-            <div class="grid">
-                <!-- <div class="thumbnail" data-type="image"><img src="/src/assets/images/Film-2.jpg" alt=""></div> --> 
-                <!-- Here I automatically insert divs with JS -->                          
-            </div>
+            <ul class="grid effect-1" id="grid">
+                <!-- Here I automatically insert lis with JS -->                          
+            </ul>
             <script src="src/addimages.js"></script>
             <script src="src/masonry.pkgd.js"></script>
             <script src="src/imagesloaded.pkgd.js"></script>
+            <script src="src/classie.js"></script>
             <script src="src/AnimOnScroll.js"></script>
             <script>
                 new AnimOnScroll( document.getElementById( 'grid' ), {
@@ -52,7 +52,6 @@
                     viewportFactor : 0.2
                 } );
             </script>
-            <script src="src/addmasonry.js"></script>
         </div>
     </div>
 </body>
