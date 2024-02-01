@@ -11,7 +11,8 @@
     <link rel="manifest" href="assets/favicon_io/site.webmanifest">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/cou8wjo.css">
-    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
     
 </head>
 
@@ -25,6 +26,7 @@
                     <div class="bar2"></div>
                     <div class="bar3"></div>
                 </div>
+                <script src="scripts.js"></script>
             </div>
             <div id="nav-menu" class="hide">
                 <div class="subnav">
@@ -43,23 +45,18 @@
             </div>
         </div>
         <div class="page">
-            <ul class="grid effect-1" id="grid">
+            <div class="grid" id="grid">
                 <!-- Here I automatically insert lis with JS -->                          
-            </ul>
-            <script src="adddigitalimages.js"></script>
-            <script src="masonry.pkgd.js"></script>
-            <script src="imagesloaded.pkgd.js"></script>
-            <script src="classie.js"></script>
-            <script src="AnimOnScroll.js"></script>
-            <script>
-                new AnimOnScroll( document.getElementById( 'grid' ), {
-                    minDuration : 0.4,
-                    maxDuration : 0.7,
-                    viewportFactor : 0.2
-                } );
-            </script>
+            </div>
         </div>
     </div>
+    <script src="masonry.pkgd.js"></script>
+    <script src="imagesloaded.pkgd.js"></script>
+    <script src="adddigitalimages.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

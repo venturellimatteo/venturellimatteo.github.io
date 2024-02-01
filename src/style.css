@@ -1,3 +1,7 @@
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+
 body {
     font-family: proxima-nova;
     margin: 0px;
@@ -30,25 +34,19 @@ div {
     color: black;
 }
 
-.grid li {
+.grid div {
     float: left;
 }
 
-.grid li.shown,
-.no-js .grid li,
-.no-cssanimations .grid li {
+.grid div.shown,
+.no-js .grid div,
+.no-cssanimations .grid div {
     opacity: 1;
 }
 
-.grid li img {
+.grid div img {
     display: block;
     max-width: 100%;
-}
-
-/* Effect 1: opacity */
-.grid.effect-1 li.animate {
-    -webkit-animation: fadeIn 0.65s ease forwards;
-    animation: fadeIn 0.65s ease forwards;
 }
 
 @-webkit-keyframes fadeIn {
@@ -135,7 +133,7 @@ div {
         width: 100%;
     }
 
-    .grid li {
+    .grid div {
         width: 100%;
         margin-bottom: 15px;
     }
@@ -185,32 +183,32 @@ div {
         width: calc(100% - 200px);
     }
 
-    .grid li {
+    .grid div {
         width: calc(100% - 10px);
         margin-left: 10px;
         margin-bottom: 10px;
     }
     
-    .grid li img:hover {
+    .grid div img:hover {
         opacity: .9;
     }
 
 }
 
 @media screen and (min-width: 1000px) {
-    .grid li {
+    .grid div {
         width: calc(100% / 2 - 10px);
     }
 }
 
 @media screen and (min-width: 1400px) {
-    .grid li {
+    .grid div {
         width: calc(100% / 3 - 10px);
     }
 }
 
 @media screen and (min-width: 1800px) {
-    .grid li {
+    .grid div {
         width: calc(100% / 4 - 10px);
     }
 }
