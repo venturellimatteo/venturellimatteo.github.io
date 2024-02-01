@@ -116,8 +116,14 @@ li.menu-item:not(:last-child) {
 
     .nav {
         width: 100%;
-        margin-bottom: 25px;
-    }    
+        position: relative;
+    }
+
+    .logo-div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
     .logo-text {
         font-size: 25px;
@@ -127,8 +133,6 @@ li.menu-item:not(:last-child) {
     .menu-button {
         display: inline-block;
         cursor: pointer;
-        position: absolute;
-        right: 25px;
     }
     
     .bar1, .bar2, .bar3 {
@@ -140,7 +144,7 @@ li.menu-item:not(:last-child) {
     }
 
     .bar2, .bar3 {
-        margin: 6px 0;
+        margin-top: 6px;
     }
     
     .change .bar1 {
@@ -162,9 +166,14 @@ li.menu-item:not(:last-child) {
     #nav-menu {
         width: 100%;
     }
+
+    li.menu-item:not(:last-child) { 
+        margin-bottom: 0px;  
+    }
     
     .subnav {
         width: 100%;
+        margin-top: 0px;
     }
 
     .primary-nav {
@@ -175,14 +184,12 @@ li.menu-item:not(:last-child) {
     .secondary-nav {
         text-align: center;
         width: 100%;
+        font-size: 13px;
+        font-weight: 400;
     }
 
     .page {
         width: 100%;
-    }
-
-    .grid div {
-        width: 100%;
-        margin-bottom: 15px;
+        margin: 25px 0 0 0;
     }
 }
