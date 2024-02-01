@@ -21,11 +21,6 @@ a {
     color: inherit;
 }
 
-div {
-    display: inline-block;
-    vertical-align: top;
-}
-
 .inactive {
     color: rgb(170, 170, 170);
 }
@@ -34,32 +29,85 @@ div {
     color: black;
 }
 
-.grid div {
-    float: left;
+.wrapper {
+    margin: 50px;
+    width: calc(100% - 100px);
 }
 
-.grid div.shown,
-.no-js .grid div,
-.no-cssanimations .grid div {
-    opacity: 1;
+li.menu-item:not(:last-child) { 
+    margin-bottom: 7px;  
 }
 
-.grid div img {
+.nav {
+    width: 160px;
+    position: fixed;
+}
+
+.logo-text {
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.menu-button {
+    display: none;
+}
+
+.subnav {
+    margin-top: 35px;
+}
+
+.primary-nav {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.secondary-nav {
+    font-size: 13px;
+}
+
+.page {
+    margin-left: 200px;
+    width: calc(100% - 200px);
+}
+
+.grid-item {
+    width: calc(100% / 4 - 10px);
+    margin-bottom: 10px;
+}
+
+.grid-item img {
     display: block;
-    max-width: 100%;
+    width: 100%;
 }
 
-@-webkit-keyframes fadeIn {
-    0% { }
-    100% { opacity: 1; }
+.grid-item img:hover {
+    opacity: .9;
 }
 
-@keyframes fadeIn {
-    0% { }
-    100% { opacity: 1; }
+.gutter-sizer {
+    width: 10px;
 }
 
-@media screen and (max-width: 599px) {
+
+@media screen and (max-width: 1800px) {
+    .grid-item {
+        width: calc(100% / 3 - 10px);
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .grid-item {
+        width: calc(100% / 2 - 10px);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .grid-item {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
 
     .wrapper {
         margin: 25px;
@@ -136,79 +184,5 @@ div {
     .grid div {
         width: 100%;
         margin-bottom: 15px;
-    }
-}
-
-
-@media screen and (min-width: 600px) {
-
-    .wrapper {
-        margin: 50px;
-        width: calc(100% - 100px);
-    }
-
-    li.menu-item:not(:last-child) { 
-        margin-bottom: 7px;  
-    }
-    
-    .nav {
-        width: 160px;
-        position: fixed;
-    }
-    
-    .logo-text {
-        font-size: 27px;
-        font-weight: 700;
-    }
-
-    .menu-button {
-        display: none;
-    }
-    
-    .subnav {
-        margin-top: 35px;
-    }
-    
-    .primary-nav {
-        font-size: 16px;
-        font-weight: 500;
-    }
-    
-    .secondary-nav {
-        font-size: 13px;
-    }
-    
-    .page {
-        margin-left: 200px;
-        width: calc(100% - 200px);
-    }
-
-    .grid div {
-        width: calc(100% - 10px);
-        margin-left: 10px;
-        margin-bottom: 10px;
-    }
-    
-    .grid div img:hover {
-        opacity: .9;
-    }
-
-}
-
-@media screen and (min-width: 1000px) {
-    .grid div {
-        width: calc(100% / 2 - 10px);
-    }
-}
-
-@media screen and (min-width: 1400px) {
-    .grid div {
-        width: calc(100% / 3 - 10px);
-    }
-}
-
-@media screen and (min-width: 1800px) {
-    .grid div {
-        width: calc(100% / 4 - 10px);
     }
 }

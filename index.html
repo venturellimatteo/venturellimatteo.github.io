@@ -11,9 +11,8 @@
     <link rel="manifest" href="src/assets/favicon_io/site.webmanifest">
     <link rel="stylesheet" href="src/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/cou8wjo.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
-    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"> -->
 </head>
 
 <body>
@@ -45,24 +44,44 @@
             </div>
         </div>
         <div class="page">
-            <div class="grid">
-                <!-- Here I automatically insert divs with JS -->                          
+            <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "gutter": ".gutter-sizer" }'>
+                <div class="gutter-sizer"></div>
+                <div class="grid-item"><img src="src/assets/images/film/film-1.jpg" alt=""></div>
+                <div class="grid-item"><img src="src/assets/images/film/film-2.jpg" alt=""></div>
+                <div class="grid-item"><img src="src/assets/images/film/film-3.jpg" alt=""></div>
+                <div class="grid-item"><img src="src/assets/images/film/film-4.jpg" alt=""></div>
+                <div class="grid-item"><img src="src/assets/images/film/film-5.jpg" alt=""></div>
+                <div class="grid-item"><img src="src/assets/images/film/film-6.jpg" alt=""></div>
+                <div class="grid-item"><img src="src/assets/images/film/film-7.jpg" alt=""></div>
+                <div class="grid-item"><img src="src/assets/images/film/film-8.jpg" alt=""></div>
+                <div class="grid-item"><img src="src/assets/images/film/film-9.jpg" alt=""></div>
+                <div class="grid-item"><img src="src/assets/images/film/film-10.jpg" alt=""></div>
+                <div class="grid-item"><img src="src/assets/images/film/film-11.jpg" alt=""></div>
+                <div class="grid-item"><img src="src/assets/images/film/film-12.jpg" alt=""></div>
+                <div class="grid-item"><img src="src/assets/images/film/film-13.jpg" alt=""></div>
+                <div class="grid-item"><img src="src/assets/images/film/film-14.jpg" alt=""></div>
+                <div class="grid-item"><img src="src/assets/images/film/film-15.jpg" alt=""></div>
+                <div class="grid-item"><img src="src/assets/images/film/film-16.jpg" alt=""></div>
+                <div class="grid-item"><img src="src/assets/images/film/film-17.jpg" alt=""></div>
+                <div class="grid-item"><img src="src/assets/images/film/film-18.jpg" alt=""></div>
+                <div class="grid-item"><img src="src/assets/images/film/film-19.jpg" alt=""></div>
+                <div class="grid-item"><img src="src/assets/images/film/film-20.jpg" alt=""></div>
+                <div class="grid-item"><img src="src/assets/images/film/film-21.jpg" alt=""></div>
+                <div class="grid-item"><img src="src/assets/images/film/film-22.jpg" alt=""></div>
+                <div class="grid-item"><img src="src/assets/images/film/film-23.jpg" alt=""></div>
+                <div class="grid-item"><img src="src/assets/images/film/film-24.jpg" alt=""></div>
+                <div class="grid-item"><img src="src/assets/images/film/film-25.jpg" alt=""></div>
+                <!-- Here I automatically insert divs with JS -->            
             </div>
         </div>
     </div>
-    <script src="src/addfilmimages.js"></script>
-    <!-- 
-        <script>
-            window.onload = () => {
-            const grid = document.querySelector('.grid');
-            const masonry = new Masonry(grid)
-        }
-        </script>
-     -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
+    
+    <!-- <script src="src/addfilmimages.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script>
         AOS.init();
-    </script>
+    </script> -->
+    
 </body>
 
 </html> 
