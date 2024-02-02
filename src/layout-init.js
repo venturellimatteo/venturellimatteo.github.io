@@ -7,6 +7,6 @@ $(document).ready(function() {
   });
 
   $grid.imagesLoaded().progress(function() {
-  $grid.masonry('layout');
+    $grid.masonry('layout');
   });
 });
