@@ -11,9 +11,10 @@
     <link rel="manifest" href="src/assets/favicon_io/site.webmanifest">
     <link rel="stylesheet" href="src/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/cou8wjo.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 </head>
 
 <body>
@@ -45,7 +46,7 @@
             </div>
         </div>
         <div class="page">
-            <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "gutter": ".gutter-sizer" }'>
+            <div class="grid">
                 <div class="gutter-sizer"></div>
                 <div class="grid-item" data-aos="fade-up"><img src="src/assets/images/film/film-1.jpg" alt=""></div>
                 <div class="grid-item" data-aos="fade-up"><img src="src/assets/images/film/film-2.jpg" alt=""></div>
@@ -75,11 +76,7 @@
             </div>
         </div>
     </div>
-    
-    <script>
-        AOS.init();
-    </script>
-    
+    <script src="src/layout-init.js"></script>
 </body>
 
 </html> 
