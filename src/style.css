@@ -66,8 +66,8 @@ li.menu-item:not(:last-child) {
 }
 
 .page {
-    margin-left: 200px;
-    width: calc(100% - 200px);
+    margin-left: 210px;
+    width: calc(100% - 210px);
 }
 
 .grid-item {
