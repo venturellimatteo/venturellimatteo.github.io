@@ -1,4 +1,4 @@
-AOS.init();
+// AOS.init();
 
 $(document).ready(function() {
   var $grid = $('.grid').masonry({
