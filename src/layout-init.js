@@ -1,4 +1,5 @@
 AOS.init();
+
 $(document).ready(function() {
   var $grid = $('.grid').masonry({
   itemSelector: '.grid-item',
@@ -9,4 +10,3 @@ $(document).ready(function() {
   $grid.masonry('layout');
   });
 });
-  
