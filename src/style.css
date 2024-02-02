@@ -81,7 +81,7 @@ li.menu-item:not(:last-child) {
 }
 
 .grid-item img:hover {
-    opacity: .9;
+    opacity: .85 !important;
 }
 
 .gutter-sizer {

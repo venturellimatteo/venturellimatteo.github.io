@@ -18,8 +18,8 @@ $(document).ready(function() {
   }
 
   var $grid = $('.grid').masonry({
-  itemSelector: '.grid-item',
-  gutter: '.gutter-sizer',
+    itemSelector: '.grid-item',
+    gutter: '.gutter-sizer',
   });
 
   $grid.imagesLoaded().progress(function() {
@@ -27,7 +27,11 @@ $(document).ready(function() {
   });
 
   AOS.init({
-    duration: 1000, // Animation duration in milliseconds
+    // duration: 1000, // Animation duration in milliseconds
   });
+
+  /* document.querySelectorAll('img').forEach(
+    (img) => img.addEventListener('load', () => AOS.refresh())
+  ); */
 
 });
