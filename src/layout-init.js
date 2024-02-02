@@ -26,4 +26,8 @@ $(document).ready(function() {
     $grid.masonry('layout');
   });
 
+  AOS.init({
+    duration: 1000, // Animation duration in milliseconds
+  });
+
 });
