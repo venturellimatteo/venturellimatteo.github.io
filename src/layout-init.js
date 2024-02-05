@@ -24,14 +24,9 @@ $(document).ready(function() {
 
   $grid.imagesLoaded().progress(function() {
     $grid.masonry('layout');
+    AOS.init();
   });
 
-  AOS.init({
-    // duration: 1000, // Animation duration in milliseconds
-  });
-
-  /* document.querySelectorAll('img').forEach(
-    (img) => img.addEventListener('load', () => AOS.refresh())
-  ); */
+  
 
 });
